@@ -38,7 +38,7 @@ export const useConvert = () => {
 			const body = await resp.json();
 			setBody(body);
 		} catch (error) {
-			console.log(error);
+			throw new Error(error);
 		}
 	};
 	return { ExcelJson, readUploadFile, getBody };

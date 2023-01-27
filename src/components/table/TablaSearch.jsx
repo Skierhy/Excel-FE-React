@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 export const TablaSearch = ({ ExcelJson = {} }) => {
-	console.log(ExcelJson);
 	return (
 		<>
 			<table className='table table-striped table-hover table-bordered mt-5'>

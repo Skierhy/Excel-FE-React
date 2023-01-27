@@ -48,7 +48,6 @@ export const Op = ({ ExcelJson }) => {
 		});
 		const resp = await data.json();
 		setMsg(resp);
-		console.log(msg);
 	};
 	return (
 		<>
@@ -229,7 +228,6 @@ export const Op = ({ ExcelJson }) => {
 										className='form-select'
 										onChange={(event) => {
 											setId(event.target.value);
-											console.log(id);
 										}}
 									>
 										<option selected disabled>
