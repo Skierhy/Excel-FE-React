@@ -9,7 +9,7 @@ export const File = () => {
 
 	return (
 		<>
-			<div className='box-sw container'>
+			<div className='box-sw container animate__animated animate__pulse'>
 				<HeadTi />
 				<form>
 					<div>
