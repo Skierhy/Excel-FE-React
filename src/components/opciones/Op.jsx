@@ -24,7 +24,9 @@ export const Op = ({ ExcelJson }) => {
 	return (
 		<>
 			<div className='container-op'>
-				<h1 className='text-center'>Opciones</h1>
+				<h1 className='text-center'>
+					Opciones (recargar pagina haga una operación)
+				</h1>
 				<div className='row mt-5'>
 					<div className='col-4 animate__animated animate__backInLeft'>
 						<div
