@@ -3,6 +3,11 @@ import * as xlsx from 'xlsx';
 
 export const convert = () => {
 	const [Update, setUpdate] = useState([]);
+
+	/**
+	 * Toma el archivo, lo lee como un búfer de matriz y luego lo convierte a JSON
+	 * @param e - el objeto del evento
+	 */
 	const convertirJSON = (e) => {
 		e.preventDefault();
 		if (e.target.files) {

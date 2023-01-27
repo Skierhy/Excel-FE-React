@@ -1,7 +1,23 @@
-* {
-	/* color de fondo */
-	background: #a2a2a2;
+html,
+body {
+	background: #b24592; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#f15f79,
+		#b24592
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#f15f79,
+		#b24592
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .container {
 	width: 90%;
+}
+
+.container-op {
+	width: 95%;
+	margin: 3rem auto;
 }
