@@ -1,27 +1,17 @@
 import PropTypes from 'prop-types';
+import { TableHead } from './head/TableHead';
+import { TableBody } from './body/TableBody';
 
 export const TablaSearch = ({ ExcelJson = {} }) => {
 	return (
 		<>
-			<table className='table table-striped table-hover table-bordered mt-5'>
-				<thead>
-					<tr>
-						<th scope='col'>User ID</th>
-						<th scope='col'>User Name</th>
-						<th scope='col'>Date</th>
-						<th scope='col'>Punch In</th>
-						<th scope='col'>Punch Out</th>
-					</tr>
-				</thead>
+			<table className='table table-warning table-hover table-bordered mt-5'>
+				<TableHead />
 				<tbody>
 					{ExcelJson.map((item) =>
 						item.Tabla.map((item, index) => (
 							<tr key={index}>
-								<td>{item['User ID']}</td>
-								<td>{item['User Name']}</td>
-								<td>{item.Date}</td>
-								<td>{item['Punch In']}</td>
-								<td>{item['Punch Out']}</td>
+								<TableBody item={item} />
 							</tr>
 						))
 					)}
@@ -30,7 +20,8 @@ export const TablaSearch = ({ ExcelJson = {} }) => {
 		</>
 	);
 };
-// validar props
+
+/* Una validación del tipo de datos que se pasa al componente. */
 TablaSearch.propTypes = {
 	ExcelJson: PropTypes.array.isRequired,
 };
